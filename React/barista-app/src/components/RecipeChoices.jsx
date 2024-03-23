@@ -7,12 +7,12 @@ const RecipeChoices = ({ handleChange, label, choices, checked }) => {
           choices.map((choice) => (
             <li key={choice}>
               <input
-                id={choice}
-                value={choice}
+                type="text"
                 name={label}
-                type="radio"
+                value={currentVal}
+                placeholder="Guess the ingredient..."
                 onChange={handleChange}
-                checked={checked == choice}
+                className = "textbox"
               />
                 {choice}
             </li>
